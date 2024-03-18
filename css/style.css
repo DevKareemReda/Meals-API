@@ -1,0 +1,202 @@
+/* _____ Import files _____ */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* _____ style all rules _____ */
+:root {
+  --main-color: #ff9900;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Cursive, sans-serif;
+  font-size: 14px;
+}
+
+.text-white {
+  color: #fff;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.img-fluid {
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+/* _____ style sec-hero _____ */
+.search-header {
+  padding: 40px 0;
+}
+
+.search-header .header-top {
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+
+.search-header form input[type="text"] {
+  font-family: "Ubuntu", sans-serif;
+  padding: 10px 0;
+  width: 345px;
+  border: 1px solid transparent;
+  border-bottom: 3px solid var(--main-color);
+  outline: none;
+  font-size: 16px;
+  font-family: Cursive, sans-serif;
+}
+
+.search-header button {
+  background: var(--main-color);
+  color: #fff;
+  border: 1px solid var(--main-color);
+  padding: 7px 16px;
+  font-size: 17px;
+  border-radius: 9px;
+  font-weight: 400;
+  letter-spacing: 0.4px;
+  cursor: pointer;
+  margin-left: 10px;
+  transition: .3s letter-spacing;
+}
+
+/* _____ style meals _____ */
+.meals h1 {
+  text-align: center;
+  font-weight: 500;
+}
+
+.meals .food-inner {
+  margin: 10px 0;
+}
+
+/* _____ style food-overlay _____ */
+.food-details {
+  background-color: #f9f9f9;
+  padding: 15px;
+  text-align: center;
+  line-height: 1.7;
+}
+
+.food-details h3 {
+  margin: 10px 0;
+}
+
+.food-details button {
+  background-color: var(--main-color);
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 9px;
+  border: none;
+  cursor: pointer;
+  transition: .3s linear;
+}
+
+.food-details button:hover {
+  background-color: #ec8f03;
+}
+
+.food-overlay {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, .6);
+  opacity: 0;
+  visibility: hidden;
+  transition: .3s linear;
+}
+
+.food-overlay.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.food-overlay .food-rect {
+  background-color: #fff;
+  color: #000;
+  max-width: 600px;
+  text-align: center;
+  padding: 25px;
+  margin: 60px auto;
+  position: relative;
+  height: 500px;
+  border: 3px solid #ee930a;
+  border-right: none;
+  overflow-y: scroll;
+  transform: scale(.6);
+  transition: .3s linear;
+}
+
+.food-overlay .food-rect.show {
+  transform: scale(1);
+}
+
+.food-overlay .food-rect::-webkit-scrollbar {
+  width: 10px;
+}
+
+.food-overlay .food-rect::-webkit-scrollbar-thumb {
+  background-color: var(--main-color);
+  border-radius: 5px;
+}
+
+.food-overlay .food-rect span.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: #fff;
+  border-radius: 100px;
+  background-color: var(--main-color);
+  display: inline-block;
+  width: 36px;
+  height: 36px;
+  line-height: 36px;
+  font-size: 25px;
+  cursor: pointer;
+
+}
+
+.food-overlay .food-rect img {
+  width: 110px;
+  height: 110px;
+  border: 2px solid #ec8f03;
+  margin-bottom: 10px;
+  border-radius: 100px;
+}
+
+.food-overlay .food-rect h1 {
+  font-weight: 400;
+  text-transform: capitalize;
+}
+
+.food-overlay .food-rect h3 {
+  letter-spacing: 5px;
+  font-weight: 500;
+  text-transform: capitalize;
+  margin: 10px 0;
+}
+
+.food-overlay .food-rect p {
+  line-height: 1.5;
+  padding: 0 15px;
+  text-align: justify;
+  margin: 25px 0;
+}
+
+.error {
+  color: #f00;
+  font-size: 18px;
+}
+
+.video {
+  color: var(--main-color);
+  font-size: 20px;
+}

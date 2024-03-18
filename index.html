@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Meals</title>
+    <link rel="stylesheet" href="css/libs/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="css/libs/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+
+    <section class="search-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 mx-auto text-center">
+                    <div class="header-top">
+                        <img src="images/logo-small.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col-lg-6 mx-auto">
+                    <form>
+                        <input type="text" name="search" placeholder="search..." autocomplete="off" id="inp">
+                        <button class="search"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- ./container -->
+    </section>
+
+    <section class="meals">
+        <div class="container">
+            <h1>Result Your Meals is:</h1>
+            <div class="row mt-5 food-column"></div>
+        </div>
+    </section>
+
+    <div class="food-overlay">
+        <div class="food-rect"></div>
+    </div>
+
+    <script src="js/scripts.js"></script>
+
+</body>
+
+</html>
